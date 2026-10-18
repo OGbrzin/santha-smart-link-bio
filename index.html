@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confira os aparelhos da Santha Smart, consulte as condições disponíveis e fale com nossa equipe pelo WhatsApp.">
+  <meta name="theme-color" content="#030303">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Santha Smart | Smartphones e Atendimento">
+  <meta property="og:description" content="Confira os aparelhos da Santha Smart, consulte as condições disponíveis e fale com nossa equipe pelo WhatsApp.">
+  <meta property="og:image" content="./assets/LogotipoSanthaSmart.png">
+
+  <title>Santha Smart | Smartphones e Atendimento</title>
+
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="header-logo" aria-label="Santha Smart - Início">
+        <img src="./assets/LogotipoSanthaSmart.png" alt="Logotipo Santha Smart" class="logo-img">
+      </a>
+      <a href="https://ogbrzin.github.io/Santha-Smart-Atrium-Shopping/"
+         target="_blank" rel="noopener noreferrer"
+         class="btn btn-outline btn-sm header-site-btn">
+        <i class="ph ph-globe"></i> Nosso Site
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-decoration" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="hero-grid-lines"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Left: Text -->
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <i class="ph-fill ph-storefront"></i>
+            Assistência Técnica Especializada
+          </div>
+          <h1 id="hero-heading" class="hero-title">
+            Seu próximo celular<br>
+            <span class="hero-title-accent">está aqui!</span>
+          </h1>
+          <p class="hero-subtitle">
+            Novos e seminovos selecionados. Atendimento especializado no Atrium Shopping, Santo André.
+          </p>
+
+          <!-- CTA Buttons – priority on mobile -->
+          <div class="hero-ctas">
+            <a href="#" class="btn btn-whatsapp btn-large btn-glow"
+               onclick="abrirWhatsApp('Olá! Gostaria de falar com um vendedor da Santha Smart.'); return false;">
+              <i class="ph-fill ph-whatsapp-logo"></i> Falar com um Vendedor
+            </a>
+            <a href="#catalogo" class="btn btn-outline btn-large scroll-link">
+              <i class="ph ph-device-mobile"></i> Ver Catálogo
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Phone showcase -->
+        <div class="hero-phones" aria-hidden="true">
+          <div class="hero-phone-stack">
+            <img src="./assets/IPhone 13 Pro.png" alt="iPhone 13 Pro" class="phone-main" loading="eager">
+            <img src="./assets/Galaxy A36.png" alt="Samsung Galaxy A36" class="phone-secondary" loading="eager">
+            <img src="./assets/Moto G35.png" alt="Moto G35" class="phone-tertiary" loading="eager">
+          </div>
+          <div class="hero-floating-badge">
+            <i class="ph-fill ph-shield-check"></i>
+            <div>
+              <strong>Garantia nos produtos</strong>
+              <span>Novos e seminovos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUICK ACTION BUTTONS ===================== -->
+    <section class="quick-actions" aria-label="Ações rápidas">
+      <div class="container">
+        <div class="quick-actions-grid">
+
+          <a href="#" class="quick-action-btn btn-action-whatsapp"
+             onclick="abrirWhatsApp('Olá! Gostaria de falar com um vendedor da Santha Smart.'); return false;">
+            <div class="qa-icon"><i class="ph-fill ph-whatsapp-logo"></i></div>
+            <div class="qa-text">
+              <span class="qa-label">Falar com</span>
+              <span class="qa-title">Vendedor</span>
+            </div>
+          </a>
+
+          <a href="#catalogo" class="quick-action-btn btn-action-catalog scroll-link">
+            <div class="qa-icon"><i class="ph ph-device-mobile"></i></div>
+            <div class="qa-text">
+              <span class="qa-label">Ver nosso</span>
+              <span class="qa-title">Catálogo</span>
+            </div>
+          </a>
+
+          <a href="#android-boleto" class="quick-action-btn btn-action-android scroll-link">
+            <div class="qa-icon"><i class="ph ph-android-logo"></i></div>
+            <div class="qa-text">
+              <span class="qa-label">Android</span>
+              <span class="qa-title">no Boleto</span>
+            </div>
+          </a>
+
+          <a href="#iphone-boleto" class="quick-action-btn btn-action-apple scroll-link">
+            <div class="qa-icon"><i class="ph ph-apple-logo"></i></div>
+            <div class="qa-text">
+              <span class="qa-label">iPhone</span>
+              <span class="qa-title">no Boleto</span>
+            </div>
+          </a>
+
+          <a href="https://ogbrzin.github.io/Santha-Smart-Atrium-Shopping/"
+             target="_blank" rel="noopener noreferrer"
+             class="quick-action-btn btn-action-site">
+            <div class="qa-icon"><i class="ph ph-globe"></i></div>
+            <div class="qa-text">
+              <span class="qa-label">Acesse</span>
+              <span class="qa-title">Nosso Site</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANDROID NO BOLETO ===================== -->
+    <section class="boleto-section" id="android-boleto" aria-labelledby="android-heading">
+      <div class="container">
+        <div class="boleto-card boleto-android">
+          <div class="boleto-icon-wrap boleto-icon-android" aria-hidden="true">
+            <i class="ph ph-android-logo"></i>
+          </div>
+          <div class="boleto-content">
+            <h2 id="android-heading">Android no Boleto</h2>
+            <p>
+              Confira os modelos Android disponíveis e consulte as condições de parcelamento.
+              Nossa equipe explica como funciona a análise e verifica as opções para você.
+            </p>
+            <p class="boleto-disclaimer">
+              <i class="ph ph-info"></i>
+              Disponibilidade e condições devem ser confirmadas diretamente com a loja. A análise é feita individualmente.
+            </p>
+            <a href="#"
+               class="btn btn-primary btn-large"
+               onclick="abrirWhatsApp('Olá! Tenho interesse em comprar um Android no boleto pela Santha Smart. Pode me explicar as condições e como funciona a análise?'); return false;">
+              <i class="ph-fill ph-whatsapp-logo"></i> Consultar condições no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IPHONE NO BOLETO ===================== -->
+    <section class="boleto-section" id="iphone-boleto" aria-labelledby="iphone-heading">
+      <div class="container">
+        <div class="boleto-card boleto-iphone">
+          <div class="boleto-icon-wrap boleto-icon-iphone" aria-hidden="true">
+            <i class="ph ph-apple-logo"></i>
+          </div>
+          <div class="boleto-content">
+            <h2 id="iphone-heading">iPhone no Boleto</h2>
+            <p>
+              Consulte os modelos de iPhone disponíveis e saiba mais sobre valores, parcelamento
+              e critérios da análise.
+            </p>
+            <p class="boleto-disclaimer">
+              <i class="ph ph-info"></i>
+              Disponibilidade e condições devem ser confirmadas diretamente com a loja. A análise é feita individualmente.
+            </p>
+            <a href="#"
+               class="btn btn-primary btn-large"
+               onclick="abrirWhatsApp('Olá! Tenho interesse em comprar um iPhone no boleto pela Santha Smart. Pode me informar os modelos disponíveis e as condições?'); return false;">
+              <i class="ph-fill ph-whatsapp-logo"></i> Consultar condições no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATÁLOGO ===================== -->
+    <section class="catalog-section" id="catalogo" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="catalog-heading">Nosso Catálogo</h2>
+          <p>Confira alguns dos modelos disponíveis em nossa loja.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="catalog-filters" role="tablist" aria-label="Filtrar por marca">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-btn" data-filter="Samsung" role="tab" aria-selected="false">Samsung</button>
+          <button class="filter-btn" data-filter="Apple" role="tab" aria-selected="false">iPhone</button>
+          <button class="filter-btn" data-filter="Motorola" role="tab" aria-selected="false">Motorola</button>
+          <button class="filter-btn" data-filter="Realme" role="tab" aria-selected="false">Realme</button>
+        </div>
+
+        <div class="products-grid" id="produtos-grid">
+          <!-- Rendered by JS -->
+        </div>
+
+        <p class="catalog-note">
+          <i class="ph ph-info"></i>
+          Os modelos acima são exemplos do estoque. Disponibilidade e valores devem ser confirmados com a loja.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== LOCALIZAÇÃO ===================== -->
+    <section class="location-section" id="como-chegar" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="location-card">
+          <div class="location-icon-col" aria-hidden="true">
+            <div class="location-icon-wrap">
+              <i class="ph ph-map-pin-line"></i>
+            </div>
+          </div>
+          <div class="location-info">
+            <h2 id="location-heading">Como Chegar</h2>
+            <p class="location-address">
+              <strong>Atrium Shopping</strong><br>
+              Rua Giovanni Battista Pirelli, 155<br>
+              Vila Homero Thon, Santo André — SP<br>
+              CEP: 09111-340
+            </p>
+
+            <!-- Horários -->
+            <div class="hours-block">
+              <h3><i class="ph ph-clock"></i> Horário de Funcionamento</h3>
+              <ul class="hours-list">
+                <li>
+                  <span class="hours-day">Segunda a Sábado</span>
+                  <span class="hours-time">10h às 22h</span>
+                </li>
+                <li>
+                  <span class="hours-day">Domingos e Feriados</span>
+                  <span class="hours-time">14h às 20h</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/search/?api=1&query=Rua+Giovanni+Battista+Pirelli+155+Vila+Homero+Thon+Santo+André+SP"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn btn-primary">
+                <i class="ph ph-navigation-arrow"></i> Abrir no Google Maps
+              </a>
+              <a href="#"
+                 class="btn btn-outline"
+                 onclick="abrirWhatsApp('Olá! Estou procurando a Santha Smart. Pode me enviar a localização da loja pelo WhatsApp?'); return false;">
+                <i class="ph-fill ph-whatsapp-logo"></i> Pedir Localização
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INSTAGRAM ===================== -->
+    <section class="social-section" aria-labelledby="social-heading">
+      <div class="container">
+        <div class="social-card">
+          <div class="social-icon-wrap" aria-hidden="true">
+            <i class="ph ph-instagram-logo"></i>
+          </div>
+          <div class="social-content">
+            <h2 id="social-heading">Siga no Instagram</h2>
+            <p>Acompanhe novidades, promoções e lançamentos de aparelhos.</p>
+            <a href="https://www.instagram.com/santhasmartabc/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-instagram btn-large">
+              <i class="ph ph-instagram-logo"></i> @santhasmartabc
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" aria-label="Rodapé">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <img src="./assets/LogotipoSanthaSmart.png" alt="Logotipo Santha Smart" class="footer-logo-img">
+        <p class="footer-brand-tagline">Assistência Técnica Especializada</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/santhasmartabc/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Instagram Santha Smart">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
+          <a href="#"
+             aria-label="WhatsApp Santha Smart"
+             onclick="abrirWhatsApp('Olá! Vim pelo Link na Bio e gostaria de mais informações.'); return false;">
+            <i class="ph-fill ph-whatsapp-logo"></i>
+          </a>
+          <a href="https://ogbrzin.github.io/Santha-Smart-Atrium-Shopping/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Site oficial Santha Smart">
+            <i class="ph ph-globe"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <h3>Informações</h3>
+        <ul class="footer-info-list">
+          <li>
+            <i class="ph ph-map-pin"></i>
+            <span>Rua Giovanni Battista Pirelli, 155<br>Vila Homero Thon, Santo André — SP</span>
+          </li>
+          <li>
+            <i class="ph ph-clock"></i>
+            <span>Seg a Sáb: 10h–22h<br>Dom e feriados: 14h–20h</span>
+          </li>
+          <li>
+            <i class="ph-fill ph-whatsapp-logo"></i>
+            <a href="#" onclick="abrirWhatsApp('Olá! Vim pelo Link na Bio e gostaria de mais informações.'); return false;">
+              (11) 91193-2411
+            </a>
+          </li>
+          <li>
+            <i class="ph ph-instagram-logo"></i>
+            <a href="https://www.instagram.com/santhasmartabc/"
+               target="_blank" rel="noopener noreferrer">
+              @santhasmartabc
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#android-boleto" class="scroll-link">Android no Boleto</a></li>
+          <li><a href="#iphone-boleto" class="scroll-link">iPhone no Boleto</a></li>
+          <li><a href="#catalogo" class="scroll-link">Catálogo</a></li>
+          <li><a href="#como-chegar" class="scroll-link">Como Chegar</a></li>
+          <li>
+            <a href="https://ogbrzin.github.io/Santha-Smart-Atrium-Shopping/"
+               target="_blank" rel="noopener noreferrer">
+              Nosso Site <i class="ph ph-arrow-square-out"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-disclaimer">
+          <i class="ph ph-info"></i>
+          Disponibilidade de produtos e condições comerciais devem ser confirmadas diretamente com a loja.
+        </p>
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Santha Smart. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="#"
+     class="floating-whatsapp"
+     aria-label="Falar no WhatsApp"
+     onclick="abrirWhatsApp('Olá! Vim pelo Link na Bio da Santha Smart e gostaria de mais informações.'); return false;">
+    <i class="ph-fill ph-whatsapp-logo"></i>
+    <span class="floating-whatsapp-label">WhatsApp</span>
+  </a>
+
+  <script src="./produtos.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
