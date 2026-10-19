@@ -22,7 +22,8 @@ function abrirWhatsApp(mensagem) {
    ===================================================== */
 
 /**
- * Gera o HTML do badge de estoque/condição.
+ * Gera o HTML do badge de estoque/condição com as classes
+ * alinhadas à paleta oficial do Modelo (Santha Smart).
  * @param {string} condicao
  * @param {string} estoque
  * @returns {string} HTML
@@ -48,7 +49,7 @@ function renderBadges(condicao, estoque) {
 }
 
 /**
- * Gera o HTML do card de produto.
+ * Gera o HTML do card de produto otimizado para celulares.
  * @param {Object} produto
  * @returns {string} HTML
  */
@@ -138,7 +139,7 @@ function initFilters() {
 }
 
 /* =====================================================
-   SMOOTH SCROLL para links internos
+   SMOOTH SCROLL para links internos (Mobile Friendly)
    ===================================================== */
 function initSmoothScroll() {
   document.querySelectorAll('.scroll-link, a[href^="#"]').forEach(link => {
@@ -148,8 +149,8 @@ function initSmoothScroll() {
       const target = document.querySelector(href);
       if (!target) return;
       e.preventDefault();
-      const headerH = document.querySelector('.site-header')?.offsetHeight || 0;
-      const top = target.getBoundingClientRect().top + window.scrollY - headerH - 16;
+      const headerH = document.querySelector('.site-header')?.offsetHeight || 60;
+      const top = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
@@ -171,9 +172,11 @@ function initHeaderScroll() {
   if (!header) return;
 
   const onScroll = () => {
-    header.style.borderBottomColor = window.scrollY > 30
-      ? 'rgba(91, 175, 230, 0.2)'
-      : 'var(--clr-black-border)';
+    if (window.scrollY > 15) {
+      header.style.boxShadow = '0 4px 20px rgba(15, 23, 42, 0.08)';
+    } else {
+      header.style.boxShadow = 'none';
+    }
   };
 
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -193,8 +196,8 @@ function injectPlaceholderStyle() {
       justify-content: center;
       width: 100%;
       height: 100%;
-      color: var(--clr-gray-dark);
-      font-size: 3.5rem;
+      color: var(--text-muted);
+      font-size: 3rem;
     }
   `;
   document.head.appendChild(style);
